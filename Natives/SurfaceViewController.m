@@ -86,13 +86,25 @@ UITextField *inputView;
     ADD_BUTTON(@"GUI", special_togglebtn, CGRectMake(5, height - 5 - 50, BTN_SQUARE));
     ADD_BUTTON_VISIBLE(@"Keyboard", special_keyboard, CGRectMake(5 * 3 + 80 * 2, 5, BTN_RECT));
 
-    ADD_BUTTON_VISIBLE(@"Pri", special_mouse_pri, CGRectMake(5, height - 5 * 3 - 50 * 3, BTN_SQUARE));
-    ADD_BUTTON_VISIBLE(@"Sec", special_mouse_sec, CGRectMake(5 * 3 + 50 * 2, height - 5 * 3 - 50 * 3, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"Pri", special_mouse_pri, CGRectMake(width - 5 * 3 - 50 * 3, height - 5 * 4 - 50 * 4, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"Sec", special_mouse_sec, CGRectMake(width - 5 * 2 - 50 * 2, height - 5 * 4 - 50 * 4, BTN_SQUARE));
 
     ADD_BUTTON_VISIBLE(@"Debug", f3, CGRectMake(5, 5, BTN_RECT));
     ADD_BUTTON_VISIBLE(@"Chat", t, CGRectMake(5 * 2 + 80, 5, BTN_RECT));
     ADD_BUTTON_VISIBLE(@"Tab", tab, CGRectMake(5 * 4 + 80 * 3, 5, BTN_RECT));
+
+    ADD_BUTTON_VISIBLE(@"1", one, CGRectMake(5 * 5 + 80 * 4, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"2", two, CGRectMake(5 * 6 + 80 * 4 + 50 * 1, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"3", three, CGRectMake(5 * 7 + 80 * 4 + 50 * 2, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"4", four, CGRectMake(5 * 8 + 80 * 4 + 50 * 3, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"5", five, CGRectMake(5 * 9 + 80 * 4 + 50 * 4, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"6", six, CGRectMake(5 * 10 + 80 * 4 + 50 * 5, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"7", seven, CGRectMake(5 * 11 + 80 * 4 + 50 * 6, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"8", eight, CGRectMake(5 * 12 + 80 * 4 + 50 * 7, 5, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"9", nine, CGRectMake(5 * 13 + 80 * 4 + 50 * 8, 5, BTN_SQUARE));
+
     ADD_BUTTON_VISIBLE(@"3rd", f5, CGRectMake(5, 5 * 2 + 30.0, BTN_RECT));
+    ADD_BUTTON_VISIBLE(@"Ctrl", ctrl, CGRectMake(5 * 2 + 80.0, 5 * 2 + 30.0, BTN_RECT));
 
     ADD_BUTTON_VISIBLE(@"▲", w, CGRectMake(5 * 2 + 50, height - 5 * 3 - 50 * 3, BTN_SQUARE));
     ADD_BUTTON_VISIBLE(@"◀", a, CGRectMake(5, height - 5 * 2 - 50 * 2, BTN_SQUARE));
@@ -105,7 +117,8 @@ UITextField *inputView;
 
     ADD_BUTTON_VISIBLE(@"Esc", escape, CGRectMake(width - 5 - 80, height - 5 - 30, BTN_RECT));
 
-    // ADD_BUTTON_VISIBLE(@"Enter", enter, CGRectMake(5, 70.0, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"Enter", enter, CGRectMake(5, 70.0, BTN_SQUARE));
+    ADD_BUTTON_VISIBLE(@"Q", q, CGRectMake(5, 70.0 + 50 + 5, BTN_SQUARE));
     
     [self.view addSubview:inputView];
 
@@ -206,6 +219,19 @@ ADD_BUTTON_DEF_KEY(a, GLFW_KEY_A)
 ADD_BUTTON_DEF_KEY(s, GLFW_KEY_S)
 ADD_BUTTON_DEF_KEY(d, GLFW_KEY_D)
 ADD_BUTTON_DEF_KEY(e, GLFW_KEY_E)
+
+ADD_BUTTON_DEF_KEY(one, GLFW_KEY_1)
+ADD_BUTTON_DEF_KEY(two, GLFW_KEY_2)
+ADD_BUTTON_DEF_KEY(three, GLFW_KEY_3)
+ADD_BUTTON_DEF_KEY(four, GLFW_KEY_4)
+ADD_BUTTON_DEF_KEY(five, GLFW_KEY_5)
+ADD_BUTTON_DEF_KEY(six, GLFW_KEY_6)
+ADD_BUTTON_DEF_KEY(seven, GLFW_KEY_7)
+ADD_BUTTON_DEF_KEY(eight, GLFW_KEY_8)
+ADD_BUTTON_DEF_KEY(nine, GLFW_KEY_9)
+ADD_BUTTON_DEF_KEY(q, GLFW_KEY_Q)
+ADD_BUTTON_DEF_KEY(enter, GLFW_KEY_ENTER)
+ADD_BUTTON_DEF_KEY(ctrl, GLFW_KEY_LEFT_CONTROL)
 
 ADD_BUTTON_DEF_KEY(left_shift, GLFW_KEY_LEFT_SHIFT)
 
